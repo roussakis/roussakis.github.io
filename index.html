@@ -5,8 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Giorgos Roussakis — Research and Development Engineer at FORTH, working on Algorithmic Game Theory, Optimization, and Machine Learning.">
     <meta name="author" content="Giorgos Roussakis">
+
+
+    <!--JSON-LD insert-->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Giorgos Roussakis",
+    "url": "https://roussakis.github.io/",
+    "image": "https://roussakis.github.io/roussphoto.png",
+    "jobTitle": "Research and Development Engineer",
+    "worksFor": {
+    "@type": "Organization",
+    "name": "Foundation for Research and Technology Hellas (FORTH)"
+    },
+    "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Crete"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "National Technical University of Athens"
+    }
+    ],
+    "email": "mailto:roussakis@ics.forth.gr",
+    "sameAs": [
+    "https://scholar.google.com/citations?user=8ejej-QAAAAJ&hl=en&authuser=1",
+    "https://www.linkedin.com/in/giorgos-roussakis-92535b360/"
+    ]
+    }
+    </script>
+
+
+    <!-- ▼▼▼ INSERT THE OPEN GRAPH + TWITTER TAGS HERE ▼▼▼ -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Giorgos Roussakis — Algorithmic Game Theory, Optimization, ML">
+    <meta property="og:description" content="R&D Engineer at FORTH. Research on algorithmic game theory, optimization theory, and machine learning, with a focus on learning dynamics in games.">
+    <meta property="og:image" content="https://roussakis.github.io/roussphoto.png">
+    <meta property="og:url" content="https://roussakis.github.io/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Giorgos Roussakis — Algorithmic Game Theory, Optimization, ML">
+    <meta name="twitter:description" content="R&D Engineer at FORTH. Research on algorithmic game theory, optimization theory, and machine learning, with a focus on learning dynamics in games.">
+    <meta name="twitter:image" content="https://roussakis.github.io/roussphoto.png">
+    <!-- ▲▲▲ END INSERTION ▲▲▲ -->
+
     <title>Giorgos Roussakis</title>
     <style>
+        :root {--link-color: #35506b;}
         /* Minimalist Academic Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -54,7 +102,7 @@
         .profile-links a {
             display: inline-block;
             margin-right: 15px;
-            color: #0366d6;
+            color: var(--link-color);
             text-decoration: none;
             font-weight: 500;
         }
@@ -105,6 +153,15 @@
             color: #444;
         }
 
+        .pub-authors a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .pub-authors a:hover {
+            text-decoration: underline;
+        }
+
         .pub-venue {
             font-style: italic;
             color: #222;
@@ -112,11 +169,19 @@
         
         .pub-links a {
             font-size: 0.9rem;
-            color: #0366d6;
+            color: var(--link-color);
             text-decoration: none;
             margin-right: 10px;
         }
         .pub-links a:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
             text-decoration: underline;
         }
 
@@ -140,7 +205,7 @@
             <h1>Giorgos Roussakis</h1>
             <h3>Research and Development Engineer, Foundation for Research and Technology Hellas (FORTH)</h3>
             <p>
-                Email: <a href="mailto:roussakis@ics.forth.gr">roussakis@ics.forth.gr</a><br>
+                Email: <a href="mailto:roussakis@ics.forth.gr">roussakis@ics.forth.gr</a>, <a href="mailto:grussakis1@gmail.com">grussakis1@gmail.com</a><br> 
                 You can find me in the Signal Processing Laboratory(SPL) at FORTH:</a><br>
                 N. Plastira 100, Vasilika Voutwn,</a><br>
                 GR-70013, Heraklion Crete, Greece </a><br>
@@ -159,7 +224,7 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                I am a Research and Development Engineer working on the TwinODIS project at the Institute of Computer Science at FORTH. I received my MSc in Computer Science from the University of Crete, where I had the privilege of being advised by Prof. Michalis Fasoulakis. During my master's, my thesis focused on developing and analyzing new algorithms for two-player zero-sum games. Prior to this, I completed my MEng in Electrical and Computer Engineering at the National Technical University of Athens where I am proud to be advised by Dimitris Fotakis.
+                I am a Research and Development Engineer working on the TwinODIS project at the Institute of Computer Science at FORTH. I received my MSc in Computer Science from the University of Crete, where I had the privilege of being advised by Prof. <a href="https://www.cs.rhul.ac.uk/home/unac118/">Michail Fasoulakis</a>. During my master's, my thesis focused on developing and analyzing new algorithms for two-player zero-sum games. Prior to this, I completed my MEng in Electrical and Computer Engineering at the National Technical University of Athens where I am proud to be advised by <a href="http://www.softlab.ntua.gr/~fotakis/.">Dimitris Fotakis</a>.
             </p>
             <p>
                 My research is driven by a broad interest in Algorithmic Game Theory, Optimization Theory, and Machine Learning. So far, I have spent most of my time analyzing how agents learn and converge in highly structured environments, like two-player zero-sum games. This has led me to explore topics like the last-iterate convergence properties of FLBR-MWU dynamics and descent-based approaches to the duality gap. However, my curiosity increasingly draws me to less structured, large-scale environments, and I am eager to explore how these game-theoretic dynamics translate to Reinforcement Learning.
@@ -175,7 +240,12 @@
             <ul class="pub-list">
                 <li>
                     <div class="pub-title">A Descent-based Method on the Duality Gap for Solving Zero-sum Games</div>
-                    <div class="pub-authors">Michalis Fasoulakis, Evangelos Markakis, <strong>Giorgos Roussakis</strong>, Christodoulos Santorinaios</div>
+                    <div class="pub-authors">
+                    <a href="https://www.cs.rhul.ac.uk/home/unac118/">Michail Fasoulakis</a>, 
+                    Evangelos Markakis,
+                    <strong>Giorgos Roussakis</strong>, 
+                    <a href="https://santorinaios.github.io/">Christodoulos Santorinaios</a>
+                    </div>
                     <div class="pub-venue">International Joint Conference on Artificial Intelligence (IJCAI), 2025</div>
                     <div class="pub-links">
                         <a href="https://arxiv.org/pdf/2501.19138">[PDF]</a>
@@ -185,7 +255,7 @@
                 </li>
                 <li>
                     <div class="pub-title">Adaptive Electricity Price Forecasting for EV Charging: Integrating Exogenous Forecasts and Rolling Window Training</div>
-                    <div class="pub-authors"><strong>Giorgos Roussakis</strong>, D. Thaens, T. Kers, R. Dekker, G. Tzagkarakis</div>
+                    <div class="pub-authors"><strong>Giorgos Roussakis</strong>, D. Thaens, T. Kers, R. Dekker, <a href = "https://sites.google.com/site/geotzag/"> G. Tzagkarakis </a> </div>
                     <div class="pub-venue">Hellenic Operational Research Society (HELORS), 2025</div>
                     <div class="pub-links">
                         <a href="https://zenodo.org/records/19917467">[PDF]</a>
@@ -193,8 +263,12 @@
                 </li>
                 <li>
                     <div class="pub-title">Improved Last-iterate Convergence Properties for the FLBR-MWU Dynamics</div>
-                    <div class="pub-authors">Michalis Fasoulakis, Evangelos Markakis, <strong>Giorgos Roussakis</strong>, Christodoulos Santorinaios</div>
-                    <div class="pub-venue">Working Paper</div>
+                    <div class="pub-authors">
+                    <a href="https://www.cs.rhul.ac.uk/home/unac118/">Michail Fasoulakis</a>, 
+                    Evangelos Markakis,
+                    <strong>Giorgos Roussakis</strong>, 
+                    <a href="https://santorinaios.github.io/">Christodoulos Santorinaios</a>
+                    </div>                    <div class="pub-venue">Working Paper</div>
                     <div class="pub-links">
                         <!-- <a href="#">[arXiv]</a> -->
                     </div>
@@ -213,8 +287,8 @@
             </ul>
         </section>
     </main>
-        <section id="Contact"
-<script data-goatcounter="https://roussakis.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+
+    <script data-goatcounter="https://roussakis.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
